@@ -2,7 +2,7 @@
 
 ## Current phase
 
-Phase 0.5 — UX, Design & Content Foundation
+Phase 1 — Ready to start
 
 ## Completed — Phase 0
 
@@ -17,7 +17,7 @@ Phase 0.5 — UX, Design & Content Foundation
 - [x] Interactive Module contract documented
 - [x] Dedicated Google Drive workspace created
 
-## Phase 0.5 — Completed foundation documents
+## Completed — Phase 0.5 UX, Design & Content Foundation
 
 - [x] `UX-FLOWS.md` — Learn/Assessment flows, sitemap, LearnQuest learner flow, UI states
 - [x] `DESIGN-SYSTEM.md` — visual direction, tokens, typography, spacing, components, responsive/accessibility baseline
@@ -28,15 +28,28 @@ Phase 0.5 — UX, Design & Content Foundation
 - [x] `FIRST-LEARNQUEST.md` — first Grade 4 science LearnQuest scope
 - [x] `IDENTITY-MODEL.md` — concrete V1 lightweight learner identity model
 - [x] `DRIVE-ASSET-CONVENTION.md` — Drive folder/file/metadata convention
+- [x] `VISUAL-DESIGN-REVIEW.md` — approved visual direction and contradiction review
+- [x] Representative visual mockups created under `design/mockups/`
 
-## Phase 0.5 — Remaining review gate
+## Phase 0.5 review gate
 
-1. [ ] Review visual direction using the wireframes and design system together.
-2. [ ] Check Phase 0.5 documents for contradictions discovered during review.
-3. [ ] Approve/adjust the first LearnQuest prototype content.
-4. [ ] Mark Phase 0.5 approved before production UI implementation begins.
+- [x] Visual direction reviewed using wireframes + design system
+- [x] Phase 0.5 documents checked for blocking contradictions
+- [x] First LearnQuest prototype content accepted as implementation reference
+- [x] Phase 0.5 approved
 
-## Critical screens now wireframed
+### Approved visual language
+
+**Playful Learning Cards + Mission UI**
+
+- Friendly and energetic, but not preschool-like
+- Large touch targets and readable Thai typography
+- Learn Mode = exploratory/playful
+- Assessment Mode = calmer/focused/trustworthy
+- Cards are the primary interaction language
+- Motion is functional, not decorative
+
+## Critical screens defined
 
 1. Home / Learn vs Assessment
 2. Learn Mode grade + subject browsing
@@ -66,9 +79,9 @@ Subfolders:
 
 Asset naming and metadata rules are defined in `DRIVE-ASSET-CONVENTION.md`.
 
-## Phase 1 — Blocked until Phase 0.5 approval
+## Phase 1 — Ready
 
-Goal after approval: produce the first running GitHub Pages shell and prove the interactive-module architecture before building the full backend.
+Goal: produce the first running GitHub Pages shell and prove the interactive-module architecture before building the full backend.
 
 Planned Phase 1 work:
 
@@ -84,6 +97,17 @@ Planned Phase 1 work:
 10. Add the approved Grade 4 learning mission.
 11. Add basic automated/static checks for module registration and content validity.
 
+## Phase 1 implementation contract
+
+Phase 1 UI must follow:
+- `VISUAL-DESIGN-REVIEW.md`
+- `DESIGN-SYSTEM.md`
+- `UX-FLOWS.md`
+- `WIREFRAMES.md`
+- `MODULE-SPEC.md`
+
+Production modules must not invent a separate design language without updating the shared design contract.
+
 ## Phase 2 preview
 
 - Google Sheets schema
@@ -94,7 +118,5 @@ Planned Phase 1 work:
 - Drive asset resolver/reference strategy
 
 ## Guardrails
-
-Do not start full Phase 1 production UI before the Phase 0.5 wireframe/design review is approved.
 
 Do not add full LMS features, school-wide administration, attendance, parent portal, formal proctoring, or complex authentication unless the PRD is explicitly changed first.
