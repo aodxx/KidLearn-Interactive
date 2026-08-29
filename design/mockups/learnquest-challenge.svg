@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+<rect width="390" height="844" fill="#F8FAFC"/>
+<rect x="0" y="0" width="390" height="112" fill="#EEF2FF"/>
+<text x="20" y="38" font-family="sans-serif" font-size="15" fill="#64748B">× ออกจากภารกิจ</text><text x="292" y="38" font-family="sans-serif" font-size="15" font-weight="700" fill="#312E81">ด่าน 2 / 5</text>
+<rect x="20" y="62" rx="7" width="350" height="12" fill="#DDE4F2"/><rect x="20" y="62" rx="7" width="140" height="12" fill="#4F46E5"/>
+<text x="20" y="146" font-family="sans-serif" font-size="16" font-weight="700" fill="#4F46E5">คำถามนักสำรวจ</text>
+<text x="20" y="187" font-family="sans-serif" font-size="27" font-weight="700" fill="#172033">ดาวเคราะห์ดวงใด</text><text x="20" y="222" font-family="sans-serif" font-size="27" font-weight="700" fill="#172033">อยู่ใกล้ดวงอาทิตย์ที่สุด?</text>
+<rect x="20" y="266" rx="18" width="350" height="70" fill="#FFFFFF" stroke="#D8E0EA" stroke-width="2"/><circle cx="52" cy="301" r="15" fill="#F1F5F9"/><text x="80" y="308" font-family="sans-serif" font-size="19" fill="#172033">โลก</text>
+<rect x="20" y="350" rx="18" width="350" height="70" fill="#EEF2FF" stroke="#4F46E5" stroke-width="3"/><circle cx="52" cy="385" r="15" fill="#4F46E5"/><circle cx="52" cy="385" r="6" fill="white"/><text x="80" y="392" font-family="sans-serif" font-size="19" font-weight="700" fill="#312E81">ดาวพุธ</text>
+<rect x="20" y="434" rx="18" width="350" height="70" fill="#FFFFFF" stroke="#D8E0EA" stroke-width="2"/><circle cx="52" cy="469" r="15" fill="#F1F5F9"/><text x="80" y="476" font-family="sans-serif" font-size="19" fill="#172033">ดาวอังคาร</text>
+<rect x="20" y="518" rx="18" width="350" height="70" fill="#FFFFFF" stroke="#D8E0EA" stroke-width="2"/><circle cx="52" cy="553" r="15" fill="#F1F5F9"/><text x="80" y="560" font-family="sans-serif" font-size="19" fill="#172033">ดาวเสาร์</text>
+<rect x="20" y="626" rx="18" width="350" height="64" fill="#4F46E5"/><text x="137" y="666" font-family="sans-serif" font-size="19" font-weight="700" fill="white">ตรวจคำตอบ</text>
+<rect x="20" y="716" rx="18" width="350" height="88" fill="#F0FDF4" stroke="#BBF7D0"/><text x="40" y="748" font-family="sans-serif" font-size="17" font-weight="700" fill="#166534">เรียนรู้ได้จากการลอง</text><text x="40" y="777" font-family="sans-serif" font-size="15" fill="#475569">Learn Mode สามารถให้คำใบ้และลองใหม่ได้</text>
+</svg>
