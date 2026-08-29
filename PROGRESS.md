@@ -2,9 +2,9 @@
 
 ## Current phase
 
-Phase 0 — Product and architecture foundation
+Phase 0.5 — UX, Design & Content Foundation
 
-## Completed
+## Completed — Phase 0
 
 - [x] Repository selected: `aodxx/KidLearn-Interactive`
 - [x] Product direction defined
@@ -17,6 +17,43 @@ Phase 0 — Product and architecture foundation
 - [x] Interactive Module contract documented
 - [x] Dedicated Google Drive workspace created
 
+## Phase 0.5 — Completed foundation documents
+
+- [x] `UX-FLOWS.md` — Learn/Assessment flows, sitemap, LearnQuest learner flow, UI states
+- [x] `DESIGN-SYSTEM.md` — visual direction, tokens, typography, spacing, components, responsive/accessibility baseline
+- [x] `CONTENT-MODEL.md` — Grade → Subject → Unit → Lesson → Content/Activity architecture
+- [x] `ASSESSMENT-RULES.md` — learner identity, attempts, score submission, feedback and failure rules
+- [x] `MODULE-SPEC.md` v0.2 — module UX contract and Learn/Assessment behavior
+
+## Phase 0.5 — Remaining before Phase 1
+
+1. [ ] Create low-fidelity wireframes for the 8 critical screens.
+2. [ ] Review visual direction using representative learner screens.
+3. [ ] Lock the first LearnQuest lesson content scope.
+4. [ ] Define concrete V1 learner identity fields and example learner records.
+5. [ ] Define the first Google Drive asset naming/metadata convention.
+6. [ ] Review all Phase 0.5 documents together for contradictions.
+7. [ ] Mark Phase 0.5 approved before production UI implementation begins.
+
+## Critical screens to wireframe
+
+1. Home / Learn vs Assessment
+2. Learn Mode grade + subject browsing
+3. Lesson screen
+4. LearnQuest mission cover
+5. Interactive challenge shell
+6. Assessment learner identification
+7. Assessment ready/start + submit state
+8. Result screen
+
+## Proposed first content prototype
+
+**ป.4 วิทยาศาสตร์ — ภารกิจสำรวจระบบสุริยะ**
+
+Purpose: prove that one LearnQuest can combine learning content, multiple choice, matching and drag/drop under the same module contract.
+
+This remains a prototype content choice until Phase 0.5 review is complete.
+
 ## Google Drive workspace
 
 Root: `KidLearn Interactive`
@@ -26,22 +63,23 @@ Subfolders:
 - `02-Interactive-Content`
 - `03-Teacher-Resources`
 
-## Next implementation phase — Phase 1
+## Phase 1 — Blocked until Phase 0.5 approval
 
-Goal: produce the first running GitHub Pages shell and prove the interactive-module architecture before building the full backend.
+Goal after approval: produce the first running GitHub Pages shell and prove the interactive-module architecture before building the full backend.
 
-Planned work:
+Planned Phase 1 work:
 
 1. Create frontend application shell.
 2. Create Learn Mode landing/navigation.
 3. Create Assessment Mode entry screen placeholder.
-4. Implement module registry/loader.
-5. Implement baseline `multiple-choice` module.
-6. Implement baseline `matching` module.
-7. Implement baseline `drag-drop` module.
-8. Implement first `LearnQuest` composite module.
-9. Add one sample Grade 4 learning mission.
-10. Add basic automated/static checks for module registration and content validity.
+4. Implement shared design tokens/components.
+5. Implement module registry/loader.
+6. Implement baseline `multiple-choice` module.
+7. Implement baseline `matching` module.
+8. Implement baseline `drag-drop` module.
+9. Implement first `LearnQuest` composite module.
+10. Add one approved Grade 4 learning mission.
+11. Add basic automated/static checks for module registration and content validity.
 
 ## Phase 2 preview
 
@@ -53,5 +91,7 @@ Planned work:
 - Drive asset resolver/reference strategy
 
 ## Guardrails
+
+Do not start full Phase 1 production UI before the Phase 0.5 wireframe/design review is approved.
 
 Do not add full LMS features, school-wide administration, attendance, parent portal, formal proctoring, or complex authentication unless the PRD is explicitly changed first.
