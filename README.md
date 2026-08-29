@@ -1,38 +1,65 @@
 # KidLearn Interactive
 
-Interactive learning hub for primary learners (initial focus: Grade 4-5 / ป.4-ป.5).
+Interactive learning hub for primary learners, initially focused on ป.4-ป.5.
 
-## Product idea
-
-KidLearn Interactive is a personal learning web app project, not a school LMS. It has two modes:
+## Product modes
 
 1. **Learn Mode** — public learning content, no login required.
-2. **Assessment Mode** — lightweight pre-created learner identity required; stores assessment scores.
+2. **Assessment Mode** — lightweight pre-created learner identity; score persistence will be connected through Apps Script.
 
 ## Architecture
 
 - Frontend: GitHub Pages
 - Backend/API: Google Apps Script
-- Data: Google Sheets
-- Media storage: Google Drive
-- Interactive activities: modular plugin/template architecture
+- Structured data: Google Sheets
+- Media: Google Drive
+- Interactive activities: modular registry/template architecture
 
-## Project documents
+## Phase 1 prototype
 
-- `PRD.md` — product requirements and scope
-- `ARCHITECTURE.md` — technical architecture and boundaries
-- `CONTRIBUTING.md` — team workflow and collaboration rules
-- `MODULE-SPEC.md` — contract for adding interactive modules
-- `PROGRESS.md` — current implementation status and next work
+The repository now contains a static-first learner prototype:
 
-## First interactive template
+- Home: Learn / Assessment mode selection
+- Grade and subject browsing
+- Grade 4 Science lesson: ระบบสุริยะ
+- LearnQuest: ภารกิจสำรวจระบบสุริยะ
+- Reusable modules: `multiple-choice`, `matching`, `drag-drop`, `learnquest`
+- Assessment entry placeholder (Backend is intentionally deferred to Phase 2)
 
-**LearnQuest** — a reusable multi-stage interactive learning mission that can combine content, multiple choice, matching, drag-and-drop, and a summary stage.
+GitHub Pages entry point: `index.html`
 
-## Google Drive workspace
+## Validate
 
-Project media and content assets are stored separately from code in a dedicated `KidLearn Interactive` Drive folder with folders for learning assets, interactive content, and teacher resources.
+```bash
+npm test
+```
+
+GitHub Actions also runs the same validation on pushes and pull requests to `main`.
+
+## Project contracts
+
+Read these before changing architecture or UI:
+
+- `PRD.md`
+- `ARCHITECTURE.md`
+- `DESIGN-SYSTEM.md`
+- `VISUAL-DESIGN-REVIEW.md`
+- `UX-FLOWS.md`
+- `WIREFRAMES.md`
+- `CONTENT-MODEL.md`
+- `MODULE-SPEC.md`
+- `DATABASE-SCHEMA.md`
+- `CONTRIBUTING.md`
+- `PROGRESS.md`
+
+## Google Drive / Database
+
+Media and content assets live in the dedicated `KidLearn Interactive` Drive workspace.
+
+Native database workbook: `KidLearn Interactive - Database v1`.
 
 ## Status
 
-Project foundation / Phase 0.
+**Phase 1 — Frontend + Interactive Prototype: in progress.**
+
+Prototype implementation is committed; deployment/mobile verification remains before Phase 1 can be closed.
