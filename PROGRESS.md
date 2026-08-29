@@ -2,152 +2,97 @@
 
 ## Current phase
 
-Phase 1 — Ready to start
+**Phase 1 — Frontend + Interactive Prototype (In progress)**
 
-## Completed — Phase 0
+## Completed foundations
 
-- [x] Repository selected: `aodxx/KidLearn-Interactive`
-- [x] Product direction defined
-- [x] Two-mode model defined: Learn / Assessment
-- [x] Initial grade scope defined: ป.4-ป.5
-- [x] Google Apps Script + Google Sheets + Google Drive architecture defined
-- [x] Interactive Hub/plugin direction defined
-- [x] First reference activity selected: LearnQuest
-- [x] Team collaboration rules documented
-- [x] Interactive Module contract documented
-- [x] Dedicated Google Drive workspace created
+### Phase 0 — Product & Architecture
+- [x] Product direction and two-mode model (Learn / Assessment)
+- [x] GitHub Pages + Apps Script + Google Sheets + Google Drive architecture
+- [x] Interactive Hub/plugin direction
+- [x] Team collaboration contracts
 
-## Completed — Phase 0.5 UX, Design & Content Foundation
+### Phase 0.5 — UX, Design & Content
+- [x] UX flows and 8 critical-screen wireframes
+- [x] Design system and approved visual language: Playful Learning Cards + Mission UI
+- [x] Content model and first LearnQuest scope
+- [x] Assessment rules and lightweight identity model
+- [x] Module UX/technical contract
+- [x] Drive asset convention
 
-- [x] `UX-FLOWS.md`
-- [x] `DESIGN-SYSTEM.md`
-- [x] `CONTENT-MODEL.md`
-- [x] `ASSESSMENT-RULES.md`
-- [x] `MODULE-SPEC.md` v0.2
-- [x] `WIREFRAMES.md`
-- [x] `FIRST-LEARNQUEST.md`
-- [x] `IDENTITY-MODEL.md`
-- [x] `DRIVE-ASSET-CONVENTION.md`
-- [x] `VISUAL-DESIGN-REVIEW.md`
-- [x] Representative visual mockups under `design/mockups/`
-- [x] Phase 0.5 review gate approved
+### Phase 0.6 — Google Sheets Data Foundation
+- [x] `DATABASE-SCHEMA.md` physical schema
+- [x] Native Google Sheet database created
+- [x] 21 schema tabs with stable IDs, relationships, versioning and migration rules
+- [x] Schema version `1.0.0`
+- [x] Seed Grade 4/5 and initial module registry
 
-## Completed — Phase 0.6 Google Sheets Data Foundation
-
-- [x] `DATABASE-SCHEMA.md` defines the physical data model column-by-column
-- [x] Stable primary-key convention defined; row numbers are not IDs
-- [x] Foreign-key relationships documented
-- [x] Module-specific configuration separated from core `Activities`
-- [x] Composite activity stages separated into `ActivityStages`
-- [x] Assessment definitions separated from runtime `Attempts`
-- [x] Official `Scores` separated from attempts for history/idempotency
-- [x] Google Drive asset registry defined via `Assets`
-- [x] Learning-objective and tag bridge tables reserved for future analytics
-- [x] Schema versioning and migration rules defined
-- [x] Apps Script integrity responsibilities defined
-- [x] Capacity guardrails and future database migration triggers documented
-- [x] Native Google Sheet database created and placed in the project Drive workspace
-- [x] 21 schema tabs created with frozen headers
-- [x] Timezone set to `Asia/Bangkok`
-- [x] Seed records created for schema metadata, ป.4/ป.5, initial modules, and public app config
-- [x] Initial schema version locked at `1.0.0`
-
-### Database workbook
-
-Title: `KidLearn Interactive - Database v1`
-
+Database workbook: `KidLearn Interactive - Database v1`  
 Spreadsheet ID: `17Uw464IVDGj0a5Sv08gzby3satdN-fhiXx5pL1PgFyA`
 
-Schema tabs:
-1. `_Meta`
-2. `Grades`
-3. `Subjects`
-4. `Units`
-5. `Lessons`
-6. `ContentBlocks`
-7. `Activities`
-8. `ActivityConfigs`
-9. `ActivityStages`
-10. `Assessments`
-11. `Learners`
-12. `Attempts`
-13. `Scores`
-14. `Assets`
-15. `LearningObjectives`
-16. `LessonObjectives`
-17. `Tags`
-18. `ContentTags`
-19. `Modules`
-20. `AppConfig`
-21. `AuditLog`
+## Phase 1 — Implemented in prototype
 
-## First content prototype
+- [x] Root `index.html` GitHub Pages entry point
+- [x] Static-first frontend structure under `frontend/`
+- [x] Shared Phase 1 design tokens/components in CSS
+- [x] Home screen with Learn / Assessment separation
+- [x] Learn Mode grade + subject navigation
+- [x] Lesson screen for the first Grade 4 science prototype
+- [x] Module registry/loader
+- [x] `multiple-choice` module
+- [x] `matching` module
+- [x] `drag-drop` / ordering module with touch-friendly up/down fallback
+- [x] `learnquest` composite module
+- [x] Grade 4 Science — `ภารกิจสำรวจระบบสุริยะ`
+- [x] LearnQuest progress and final local result
+- [x] Assessment entry placeholder clearly marked as Backend Phase 2 work
+- [x] Static module/content validation script under `tests/`
+- [x] `.nojekyll` added for static GitHub Pages delivery
 
-**ป.4 วิทยาศาสตร์ — ภารกิจสำรวจระบบสุริยะ**
+## Phase 1 — Verification still required before closure
 
-Purpose: prove that one LearnQuest can combine learning content, multiple choice, matching and drag/drop under the same module contract.
+- [ ] Confirm GitHub Pages is enabled from `main` / repository root and deployment succeeds
+- [ ] Run/confirm `npm test` in an environment with repository access
+- [ ] Mobile UX smoke test on the deployed site
+- [ ] Verify Multiple Choice retry and feedback
+- [ ] Verify Matching completion on touch-sized viewport
+- [ ] Verify Drag/ordering on Android/iOS touch interaction
+- [ ] Verify LearnQuest end-to-end navigation and exit behavior
+- [ ] Check keyboard focus and reduced-motion baseline
+- [ ] Fix any defects found during deployed review
 
-See `FIRST-LEARNQUEST.md` for the scoped lesson and stages.
-
-## Google Drive workspace
-
-Root: `KidLearn Interactive`
-
-Subfolders:
-- `01-Learning-Assets`
-- `02-Interactive-Content`
-- `03-Teacher-Resources`
-- Native database workbook: `KidLearn Interactive - Database v1`
-
-Asset naming and metadata rules are defined in `DRIVE-ASSET-CONVENTION.md`.
-
-## Phase 1 — Ready
-
-Goal: produce the first running GitHub Pages shell and prove the interactive-module architecture before building the Apps Script integration.
-
-Planned Phase 1 work:
-
-1. Create frontend application shell.
-2. Create Learn Mode landing/navigation.
-3. Create Assessment Mode entry screen placeholder.
-4. Implement shared design tokens/components.
-5. Implement module registry/loader.
-6. Implement baseline `multiple-choice` module.
-7. Implement baseline `matching` module.
-8. Implement baseline `drag-drop` module.
-9. Implement first `LearnQuest` composite module.
-10. Add the approved Grade 4 learning mission.
-11. Add basic automated/static checks for module registration and content validity.
+> Note: the current execution environment could not clone GitHub over the local container network, so local `npm test` could not be executed from that environment. The validation script is committed and ready for CI/local execution.
 
 ## Phase 1 implementation contract
 
-Phase 1 UI must follow:
+Phase 1 must continue to follow:
 - `VISUAL-DESIGN-REVIEW.md`
 - `DESIGN-SYSTEM.md`
 - `UX-FLOWS.md`
 - `WIREFRAMES.md`
 - `MODULE-SPEC.md`
 - `CONTENT-MODEL.md`
-- `DATABASE-SCHEMA.md` for any data-shaped fixtures/interfaces
+- `DATABASE-SCHEMA.md`
 
-Production modules must not invent a separate design language or database contract without updating the shared documentation.
+Interactive modules must remain data-driven and must not access Google Sheets directly.
 
 ## Phase 2 preview — Backend Integration
 
+Only begin after Phase 1 deployed UX verification:
 - Apps Script API foundation
-- sheet repository/data-access layer using header names, not fixed column numbers
-- schema-version check on startup/admin migration operations
-- lightweight learner identity lookup/verification
-- assessment attempt/session flow
+- sheet repository/data-access layer using header names
+- schema-version guard
+- learner identity lookup/verification
+- assessment attempt/session lifecycle
 - idempotent score persistence
-- Drive asset resolver/reference strategy
+- Drive asset resolver
 - content publishing/validation endpoints
 - backup + migration utilities
 
 ## Guardrails
 
-Do not add full LMS features, school-wide administration, attendance, parent portal, formal proctoring, or complex authentication unless the PRD is explicitly changed first.
+Do not add school-wide LMS features, attendance, parent portals, formal proctoring, or complex authentication unless the PRD is intentionally revised.
 
-Do not write Apps Script code that relies on spreadsheet row numbers as record identity.
+Do not use spreadsheet row numbers as record identity.
 
-Do not let interactive modules write directly to Google Sheets.
+Do not show Assessment score-save success until Apps Script confirms persistence.
