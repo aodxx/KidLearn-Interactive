@@ -1,0 +1,1 @@
+{"name":"kidlearn-interactive","private":true,"type":"module","scripts":{"test":"node tests/validate.mjs"}}
