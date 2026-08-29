@@ -24,18 +24,19 @@ Phase 0.5 — UX, Design & Content Foundation
 - [x] `CONTENT-MODEL.md` — Grade → Subject → Unit → Lesson → Content/Activity architecture
 - [x] `ASSESSMENT-RULES.md` — learner identity, attempts, score submission, feedback and failure rules
 - [x] `MODULE-SPEC.md` v0.2 — module UX contract and Learn/Assessment behavior
+- [x] `WIREFRAMES.md` — low-fidelity wireframes for 8 critical learner screens
+- [x] `FIRST-LEARNQUEST.md` — first Grade 4 science LearnQuest scope
+- [x] `IDENTITY-MODEL.md` — concrete V1 lightweight learner identity model
+- [x] `DRIVE-ASSET-CONVENTION.md` — Drive folder/file/metadata convention
 
-## Phase 0.5 — Remaining before Phase 1
+## Phase 0.5 — Remaining review gate
 
-1. [ ] Create low-fidelity wireframes for the 8 critical screens.
-2. [ ] Review visual direction using representative learner screens.
-3. [ ] Lock the first LearnQuest lesson content scope.
-4. [ ] Define concrete V1 learner identity fields and example learner records.
-5. [ ] Define the first Google Drive asset naming/metadata convention.
-6. [ ] Review all Phase 0.5 documents together for contradictions.
-7. [ ] Mark Phase 0.5 approved before production UI implementation begins.
+1. [ ] Review visual direction using the wireframes and design system together.
+2. [ ] Check Phase 0.5 documents for contradictions discovered during review.
+3. [ ] Approve/adjust the first LearnQuest prototype content.
+4. [ ] Mark Phase 0.5 approved before production UI implementation begins.
 
-## Critical screens to wireframe
+## Critical screens now wireframed
 
 1. Home / Learn vs Assessment
 2. Learn Mode grade + subject browsing
@@ -46,13 +47,13 @@ Phase 0.5 — UX, Design & Content Foundation
 7. Assessment ready/start + submit state
 8. Result screen
 
-## Proposed first content prototype
+## First content prototype
 
 **ป.4 วิทยาศาสตร์ — ภารกิจสำรวจระบบสุริยะ**
 
 Purpose: prove that one LearnQuest can combine learning content, multiple choice, matching and drag/drop under the same module contract.
 
-This remains a prototype content choice until Phase 0.5 review is complete.
+See `FIRST-LEARNQUEST.md` for the scoped lesson and stages.
 
 ## Google Drive workspace
 
@@ -62,6 +63,8 @@ Subfolders:
 - `01-Learning-Assets`
 - `02-Interactive-Content`
 - `03-Teacher-Resources`
+
+Asset naming and metadata rules are defined in `DRIVE-ASSET-CONVENTION.md`.
 
 ## Phase 1 — Blocked until Phase 0.5 approval
 
@@ -78,7 +81,7 @@ Planned Phase 1 work:
 7. Implement baseline `matching` module.
 8. Implement baseline `drag-drop` module.
 9. Implement first `LearnQuest` composite module.
-10. Add one approved Grade 4 learning mission.
+10. Add the approved Grade 4 learning mission.
 11. Add basic automated/static checks for module registration and content validity.
 
 ## Phase 2 preview
